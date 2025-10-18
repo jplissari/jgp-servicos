@@ -157,16 +157,18 @@ A Pisani oferece locação de produtos como solução inovadora e sustentável p
 ## COMO COMPRAR
 
 A Pisani atende através de:
-1. Distribuidores autorizados
-2. Vendas diretas para grandes volumes
-3. E-commerce (disponível)
-4. Locação de produtos
+1. Distribuidores autorizados para volumes menores de 50 unidades
+2. A PISANI recomenda a FORMA Utilidades como revenda autorizada
+3. Vendas diretas para grandes volumes (acima de 50 unidades)
+4. E-commerce (disponível)
+5. Locação de produtos
 
 **Canais de contato:**
 - Site: www.pisani.com.br
 - Telefones das unidades (listados acima)
 - Formulário de orçamento online
 - E-mail: (disponível no site)
+- Vendedor Humano, chamado Andrei, por telefone 54 xxxxx-xxxxxx (caso o cliente solicite falar com alguém)
 
 ## CATÁLOGOS DISPONÍVEIS
 
@@ -231,6 +233,10 @@ Espreguiçadeira com design moderno e sustentável.
 - Desenvolvimento de produtos customizados
 - Consultoria para escolha da solução ideal
 - Treinamento para uso adequado dos produtos
+
+### Próximo ao fechamento do negocio 
+- Sempre que estiver próximo ao fechamento do negócio ou com o produto já especificado e a modalidade, locação ou compra, perguntar se não quer ser transferido a um Vendedor Humano
+- indicar que ele também pode usar a aba orçamento do Site
 
 ## PERGUNTAS FREQUENTES (FAQ)
 
