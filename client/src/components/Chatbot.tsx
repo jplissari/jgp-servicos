@@ -14,9 +14,9 @@ type ChatMode = "jgp" | "pisani";
 
 export default function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
-  const [chatMode, setChatMode] = useState<ChatMode>("jgp");
+  const [chatMode, setChatMode] = useState<ChatMode>("pisani");
   const [messages, setMessages] = useState<Message[]>([
-    { text: "Olá! Sou o assistente virtual da JGP Serviços. Como posso ajudá-lo hoje?", isBot: true }
+    { text: "Olá! Sou PISANI, vendedor especializado. Estou aqui para ajudá-lo com produtos, cotações e pedidos. Como posso ajudar?", isBot: true }
   ]);
   const [inputMessage, setInputMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -144,12 +144,10 @@ export default function Chatbot() {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-primary-foreground/20 flex items-center justify-center">
-                  {chatMode === "jgp" ? <Bot className="w-6 h-6" /> : <User className="w-6 h-6" />}
+                  <User className="w-6 h-6" />
                 </div>
                 <div>
-                  <CardTitle className="text-lg">
-                    {chatMode === "jgp" ? "Assistente JGP" : "PISANI - Vendedor"}
-                  </CardTitle>
+                  <CardTitle className="text-lg">PISANI - Vendedor</CardTitle>
                   <p className="text-xs opacity-90">Powered by OpenAI</p>
                 </div>
               </div>
@@ -160,28 +158,6 @@ export default function Chatbot() {
                 className="text-primary-foreground hover:bg-primary-foreground/20"
               >
                 <X className="w-5 h-5" />
-              </Button>
-            </div>
-
-            {/* Mode Selector */}
-            <div className="flex gap-2">
-              <Button
-                variant={chatMode === "jgp" ? "secondary" : "ghost"}
-                size="sm"
-                onClick={() => switchMode("jgp")}
-                className={`flex-1 text-xs ${chatMode === "jgp" ? "bg-primary-foreground text-primary" : "text-primary-foreground hover:bg-primary-foreground/20"}`}
-              >
-                <Bot className="w-3 h-3 mr-1" />
-                JGP Serviços
-              </Button>
-              <Button
-                variant={chatMode === "pisani" ? "secondary" : "ghost"}
-                size="sm"
-                onClick={() => switchMode("pisani")}
-                className={`flex-1 text-xs ${chatMode === "pisani" ? "bg-primary-foreground text-primary" : "text-primary-foreground hover:bg-primary-foreground/20"}`}
-              >
-                <User className="w-3 h-3 mr-1" />
-                PISANI
               </Button>
             </div>
           </CardHeader>
