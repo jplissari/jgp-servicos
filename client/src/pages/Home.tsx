@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import Chatbot from "@/components/Chatbot";
 import { ArrowRight, Bot, Brain, LineChart, Menu, Sparkles, Target, X, Zap } from "lucide-react";
 import { useState } from "react";
 import { Link } from "wouter";
@@ -462,6 +463,9 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Chatbot */}
+      <Chatbot />
     </div>
   );
 }
