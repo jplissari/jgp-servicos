@@ -39,9 +39,10 @@ queryClient.getMutationCache().subscribe(event => {
 
 // Detectar automaticamente a URL da API
 const getApiUrl = () => {
-  // Se estiver em produção na Vercel, usar o backend do Manus
-  if (window.location.hostname.includes('vercel.app') || window.location.hostname === 'www.jgpservice.com') {
-    return 'https://jgpservice.manus.space/api/trpc';
+  // Priorizar variável de ambiente se definida
+  const envApiUrl = import.meta.env.VITE_API_URL;
+  if (envApiUrl) {
+    return `${envApiUrl}/api/trpc`;
   }
   // Caso contrário, usar URL relativa (desenvolvimento ou Manus)
   return '/api/trpc';
