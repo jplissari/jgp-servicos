@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { trpc } from "@/lib/trpc";
 import { Bot, Loader2, MessageCircle, Send, User, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 type Message = {
   text: string;
@@ -20,6 +20,12 @@ export default function Chatbot() {
   ]);
   const [inputMessage, setInputMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  // Rolagem automática quando mensagens mudam
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages, isLoading]);
 
   const sendMessageMutation = trpc.chatbot.sendMessage.useMutation();
 
@@ -209,6 +215,9 @@ export default function Chatbot() {
                 </div>
               </div>
             )}
+            
+            {/* Elemento invisível para rolagem automática */}
+            <div ref={messagesEndRef} />
           </CardContent>
 
           {/* Input Area */}
