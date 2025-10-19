@@ -37,10 +37,20 @@ queryClient.getMutationCache().subscribe(event => {
   }
 });
 
+// Detectar automaticamente a URL da API
+const getApiUrl = () => {
+  // Se estiver em produção na Vercel, usar o backend do Manus
+  if (window.location.hostname.includes('vercel.app') || window.location.hostname === 'www.jgpservice.com') {
+    return 'https://jgpservice.manus.space/api/trpc';
+  }
+  // Caso contrário, usar URL relativa (desenvolvimento ou Manus)
+  return '/api/trpc';
+};
+
 const trpcClient = trpc.createClient({
   links: [
     httpBatchLink({
-      url: "/api/trpc",
+      url: getApiUrl(),
       transformer: superjson,
       fetch(input, init) {
         return globalThis.fetch(input, {
