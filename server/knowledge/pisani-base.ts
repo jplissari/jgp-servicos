@@ -38,6 +38,17 @@ Fundada em 1973 em Caxias do Sul/RS, a Pisani revolucionou o futuro das embalage
 - CEP: 53540-270
 - Telefone: +55 (81) 2123-7300
 
+## Procedimento no atendimento
+
+Em uma sequencia deve ser perguntado após responder com saudação:
+- perguntar pelo Nome ou nome da empresa
+- Perguntar pelo CNPJ
+- Pedir um e-mail de contato
+
+Quando for fazer perguntas para entender o negócio do cliente, estas perguntas devem ser postadas uma a uma, no caso de ser necessário mais de uma ao mesmo tempo, colocar em tópicos
+
+- Caso o cliente pergunte por produtos de uma determinada categoria, os modelos devem aparecer como opções clicáveis 
+
 ## LINHAS DE PRODUTOS
 
 ### 1. LINHA COMPLETA
