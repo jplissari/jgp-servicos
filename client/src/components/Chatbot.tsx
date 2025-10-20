@@ -4,13 +4,28 @@ import { Input } from "@/components/ui/input";
 import { trpc } from "@/lib/trpc";
 import { Bot, Loader2, MessageCircle, Send, User, X } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
+import ProductCardContainer from "./ProductCardContainer";
 
 type Message = {
   text: string;
   isBot: boolean;
+  produtos?: string[]; // Códigos de produtos para exibir
 };
 
 type ChatMode = "jgp" | "pisani";
+
+// Função para detectar códigos de produtos na mensagem
+const detectarProdutos = (mensagem: string): string[] => {
+  // Regex para detectar códigos como: CN 1518, EURO 6421, GALIA 3212, KLT 4314
+  const codigosRegex = /(CN|EURO|GALIA|KLT|R-KLT)\s*\d{4,5}/gi;
+  const matches = mensagem.match(codigosRegex);
+  
+  if (!matches) return [];
+  
+  // Remover duplicatas e normalizar
+  const codigos = [...new Set(matches.map(c => c.trim().toUpperCase()))];
+  return codigos;
+};
 
 export default function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,6 +68,12 @@ export default function Chatbot() {
     setMessages([{ text: welcomeMessage, isBot: true }]);
   };
 
+  const handleSolicitarOrcamento = (codigo: string) => {
+    // Adiciona mensagem automática solicitando orçamento
+    const mensagem = `Gostaria de solicitar um orçamento para o produto ${codigo}`;
+    handleQuickReply(mensagem);
+  };
+
   const handleSendMessage = async () => {
     if (!inputMessage.trim() || isLoading) return;
 
@@ -79,7 +100,14 @@ export default function Chatbot() {
         mode: chatMode
       });
 
-      setMessages([...newMessages, { text: response.message, isBot: true }]);
+      // Detectar produtos na resposta do bot
+      const produtosDetectados = detectarProdutos(response.message);
+
+      setMessages([...newMessages, { 
+        text: response.message, 
+        isBot: true,
+        produtos: produtosDetectados.length > 0 ? produtosDetectados : undefined
+      }]);
     } catch (error) {
       console.error("Error sending message:", error);
       setMessages([
@@ -115,7 +143,14 @@ export default function Chatbot() {
         mode: chatMode
       });
 
-      setMessages([...newMessages, { text: response.message, isBot: true }]);
+      // Detectar produtos na resposta do bot
+      const produtosDetectados = detectarProdutos(response.message);
+
+      setMessages([...newMessages, { 
+        text: response.message, 
+        isBot: true,
+        produtos: produtosDetectados.length > 0 ? produtosDetectados : undefined
+      }]);
     } catch (error) {
       console.error("Error sending message:", error);
       setMessages([
@@ -170,19 +205,34 @@ export default function Chatbot() {
 
           <CardContent className="flex-1 overflow-y-auto p-4 space-y-4">
             {messages.map((message, index) => (
-              <div
-                key={index}
-                className={`flex ${message.isBot ? "justify-start" : "justify-end"}`}
-              >
+              <div key={index} className="space-y-2">
+                {/* Mensagem de texto */}
                 <div
-                  className={`max-w-[80%] rounded-lg p-3 ${
-                    message.isBot
-                      ? "bg-muted text-foreground"
-                      : "bg-primary text-primary-foreground"
-                  }`}
+                  className={`flex ${message.isBot ? "justify-start" : "justify-end"}`}
                 >
-                  <p className="text-sm whitespace-pre-wrap">{message.text}</p>
+                  <div
+                    className={`max-w-[80%] rounded-lg p-3 ${
+                      message.isBot
+                        ? "bg-muted text-foreground"
+                        : "bg-primary text-primary-foreground"
+                    }`}
+                  >
+                    <p className="text-sm whitespace-pre-wrap">{message.text}</p>
+                  </div>
                 </div>
+
+                {/* Cards de produtos (se houver) */}
+                {message.produtos && message.produtos.length > 0 && (
+                  <div className="grid grid-cols-1 gap-3 mt-2">
+                    {message.produtos.map((codigo) => (
+                      <ProductCardContainer
+                        key={codigo}
+                        codigo={codigo}
+                        onSolicitarOrcamento={handleSolicitarOrcamento}
+                      />
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
 

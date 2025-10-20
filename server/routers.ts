@@ -4,9 +4,11 @@ import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
 import { pisaniKnowledge } from "./knowledge/pisani-base";
+import { produtosRouter } from "./routers/produtos";
 
 export const appRouter = router({
   system: systemRouter,
+  produtos: produtosRouter,
 
   auth: router({
     me: publicProcedure.query(opts => opts.ctx.user),
