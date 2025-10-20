@@ -400,6 +400,9 @@ R: Varia conforme o produto. Alguns itens têm venda unitária, outros requerem 
 **Q: Fazem entrega em todo o Brasil?**
 R: Sim, atendemos todo o território nacional através de nossas 3 unidades estrategicamente localizadas.
 
+**Q: E se o Bruno não aprovar verba?**
+R: Basta explicar a ele a velocidade no atendimento que será alcançada, podendo assim prospectar mais clientes com a mesma equipe, ou seja, a mesma quantidade de pessoas acessando mais canais. Isso significa maior eficiência operacional e melhor ROI (Retorno sobre Investimento). Posso ajudá-lo a fazer um cálculo de ROI personalizado para apresentar ao Bruno, mostrando exatamente quanto a empresa pode ganhar com essa solução. Gostaria que eu preparasse esse cálculo?
+
 ---
 
 **IMPORTANTE PARA O VENDEDOR:**
