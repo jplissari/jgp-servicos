@@ -67,11 +67,102 @@ Caixas especializadas para transporte e armazenamento de bebidas.
 - Resistentes e empilháveis
 - Uso intensivo na indústria de bebidas
 
-### 3. INDUSTRIAL
-Soluções para indústrias em geral.
-- Caixas para armazenamento industrial
-- Pallets plásticos
+### 3. INDUSTRIAL - CAIXAS PLÁSTICAS
+
+**IMPORTANTE:** Quando mencionar produtos, SEMPRE inclua o código completo (ex: CN 1518, EURO 6421) para exibir fotos automaticamente.
+
+#### LINHA CN - Caixas Industriais
+
+**CN 1518** - Caixa Industrial Compacta
+- Capacidade: 0,6 L | Dimensões: 493,5 x 99 x 80 mm
+- Ideal para: Peças pequenas, componentes automotivos
+
+**CN 2158** - Caixa Industrial Pequena
+- Capacidade: 1,5 L | Dimensões: 174 x 143 mm
+- Ideal para: Organização de pequenos itens
+
+**CN 321612** - Caixa Industrial Média
+- Capacidade: 3,4 L | Dimensões: 320 x 162 x 120 mm
+- Ideal para: Armazenamento e transporte industrial
+
+**CN 4315** - Caixa Industrial Grande
+- Capacidade: 14 L | Dimensões: 400 x 300 x 158 mm
+- Ideal para: Indústria automotiva e metalmecânica
+
+**CN 6408** - Caixa Industrial Baixa
+- Capacidade: 13 L | Dimensões: 600 x 400 x 85 mm
+- Ideal para: Armazenamento horizontal
+
+**CN 6415** - Caixa Industrial Média
+- Capacidade: 28 L | Dimensões: 600 x 400 x 150 mm
+- Ideal para: Armazenamento versátil
+
+**CN 6425** - Caixa Industrial Alta
+- Capacidade: 47 L | Dimensões: 600 x 400 x 252 mm
+- Ideal para: Grande volume de armazenamento
+
+**CN 6430 A 4A** - Caixa Hortifruti
+- Capacidade: 57 L | Dimensões: 600 x 400 x 300 mm
+- Ideal para: Frutas, verduras, e-commerce
+
+**CN 6435** - Caixa Industrial Extra Grande
+- Capacidade: 67 L | Dimensões: 602 x 402 x 352 mm
+- Ideal para: Máximo armazenamento
+
+#### LINHA EURO - Padrão Europeu
+
+**EURO 6415** - Caixa Logística Média
+- Capacidade: 18 L / 20 kg | Dimensões: 594 x 396 x 156 mm
+- Ideal para: Cadeia logística, automação
+
+**EURO 6421** - Caixa Logística Grande
+- Capacidade: 34,5 L / 20 kg | Dimensões: 594 x 396 x 213 mm
+- Ideal para: Transporte automatizado
+
+**EURO 6432** - Caixa Logística Extra Grande
+- Capacidade: 56 L / 20 kg | Dimensões: 594 x 396 x 328 mm
+- Ideal para: Alto volume logístico
+
+#### LINHA GALIA - Padrão Automotivo
+
+**GALIA 1322** - Caixa Automotiva Longa
+- Capacidade: 48,5 L / 15 kg | Dimensões: 970 x 272 x 192,7 mm
+- Ideal para: Peças longas automotivas
+
+**GALIA 3212** - Caixa Automotiva Pequena
+- Capacidade: 4 L / 15 kg | Dimensões: 397 x 197 x 114 mm
+- Ideal para: Componentes pequenos
+
+**GALIA 4312** - Caixa Automotiva Média
+- Capacidade: 8 L / 15 kg | Dimensões: 396 x 297 x 114 mm
+- Ideal para: Peças médias
+
+**GALIA 4322** - Caixa Automotiva Alta
+- Capacidade: 18 L / 15 kg | Dimensões: 396 x 297 x 214 mm
+- Ideal para: Maior capacidade
+
+**GALIA 6422** - Caixa Automotiva Grande
+- Capacidade: 40 L / 15 kg | Dimensões: 594 x 396 x 214 mm
+- Ideal para: Grande volume automotivo
+
+**GALIA 6432** - Caixa Automotiva Extra Grande
+- Capacidade: 59 L / 15 kg | Dimensões: 594 x 396 x 314 mm
+- Ideal para: Máxima capacidade automotiva
+
+#### LINHA KLT - Kleinladungsträger
+
+**KLT 3214** - Caixa KLT Pequena
+- Capacidade: 4,6 L | Dimensões: 297 x 196 x 147,5 mm
+- Ideal para: Padrão VDA 4902, indústria automotiva
+
+**KLT 4314** - Caixa KLT Média
+- Capacidade: 9 L | Dimensões: 396 x 297 x 147,50 mm
+- Ideal para: Empilhamento autotrável, logística
+
+**Outras soluções:**
+- Pallets plásticos de diversos tamanhos
 - Contentores industriais
+- Soluções customizadas
 
 ### 4. HORTIFRUTI
 Produtos específicos para frutas, legumes e verduras.
